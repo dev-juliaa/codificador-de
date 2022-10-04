@@ -73,3 +73,7 @@ body {
     cursor: pointer;
     border: none;
 }
+@media only screen and (max-device-width: 900px) {
+.body { width:100%; }
+.container {width: 100%;}
+}
