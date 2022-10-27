@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/index.css">
+    <title>Dcode</title>
+</head>
+<body>
+    
+<! //// abrindo a div do corpo do site //// !>
+
+<main>
+<div class="container">
+<h1>CODIFICADOR E DECODIFICADOR</h1>
+<form>
+     <br>
+        <! //// opção de escolha //// !>
+
+        <form>
+            <section class="top-op">
+            <select class="op">
+               <option value="selecionar" disabled selected>Selecione</option>
+               <option value="base64">Base 64</option>
+               <option value="cifraCesar">Cifra de César</option>
+           </select>
+               <br>
+           <div class="radio-button">
+           <div class="radio">
+           <input type="radio" name="opcao" id="codificar" value="codificar" checked />
+           <label for="codificar">Codificar</label>
+           </div>
+               
+           <div class="radio">
+           <input type="radio" name="opcao" id="decodificar" value="decodificar"/>
+           <label for="decodificar">Decodificar</label>
+           </div>
+           </div>
+           </section>
+           
+<br>
+<!////  caixa de mensagem //// !>
+
+<div class="chave">
+    <label class="chave" for="range">Escolha uma chave para a mensagem</label>
+    <div class="slider-range">
+        <input type="range" value="1" min="1" max="26" class="range" id="range" oninput="rangenumber.value=value" />
+        <input type="number" value="1" id="rangenumber" min="1" max="26" oninput="range.value=value" />
+    </div>
+</div>
+
+<br>
+
+<div class="mensagem">
+    <textarea id="entrada" type="text" rows="10" cols="25" placeholder="Inspire aqui sua mensagem"></textarea>
+    <textarea id="saida" type="text"  rows="10" cols="25" placeholder="Sua mensagem d-codificada"></textarea>
+</div>
+
+
+
+<! //// botao de executa o codigo //// !>
+
+<div class="botao">
+
+<button id="btnBotao">Executar</button>
+
+</div>
+
+</form>
+
+</div>
+
+
+<! //// fim do codigo //// !>
+</main>
+
+    <script src="SCRIPT/index.js"></script>
+</body>
+</html>
