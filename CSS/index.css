@@ -14,12 +14,12 @@ body {
     justify-content:center;
     padding: 0;
     margin: 0;
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwwEdvqisXAS0RYPNlo-Qwj9UPOGnTRLf_mg&usqp=CAU");
+    background-image: url("https://i.gifer.com/5Yx8.gif");
 }
 
 .container{
     align-items: center;
-    background-color: lavender;
+    background-color: rgb(255, 255, 255);
     width: max-content;
     padding: 40px;
     border-radius: 50px 40px 50px 40px;
